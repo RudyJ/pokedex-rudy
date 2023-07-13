@@ -1,0 +1,38 @@
+<div *ngIf="pokemon">
+  <menu [data]="{
+    name: pokemon.name,
+    color: pokemon.species.color.name,
+    id: pokemon.id
+  }">
+    <div class="hero" [ngClass]="pokemon.species.color.name">
+      <img [src]="pokemon.sprites.other['official-artwork'].front_default" [alt]="pokemon.name" />
+    </div>
+    <div class="principal">
+      <span class="name">{{pokemon.name}}</span>
+      <div class="categories">
+        <span class="category" *ngFor="let category of pokemon.types" [ngClass]="mapaEtiquetaCor[category.name]">{{category.name}}</span>
+      </div>
+    </div>
+    <div class="double-infos">
+      <div class="info">
+        <span class="info-value">{{calcPeso(pokemon.weight)}}</span>
+        <span class="info-title">Weight</span>
+      </div>
+      <div class="info">
+        <span class="info-value">{{calcAltura(pokemon.height)}}</span>
+        <span class="info-title">Height</span>
+      </div>
+    </div>
+    <div class="stats-container">
+      <h3>Base Stats</h3>
+      <div class="stats-content">
+        <div *ngFor="let stat of stats" class="stats">
+          <span class="stat-name">{{stat.acronym}}</span>
+          <div class="stat-bar">
+            <div class="stat-bar-value" [ngStyle]="{'width': stat.value + '%', 'background-color': stat.color, 'color': stat.textColor}">{{stat.value}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </menu>
+</div>

@@ -1,0 +1,7 @@
+/*
+ * Public API Surface of pokemon-api
+ */
+export * from './lib/pokemon-api.service';
+export * from './lib/pokemon-api.component';
+export * from './lib/pokemon-api.module';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Byb2plY3RzL3Bva2Vtb24tYXBpL3NyYy9wdWJsaWMtYXBpLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztHQUVHO0FBRUgsY0FBYywyQkFBMkIsQ0FBQztBQUMxQyxjQUFjLDZCQUE2QixDQUFDO0FBQzVDLGNBQWMsMEJBQTBCLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIvKlxuICogUHVibGljIEFQSSBTdXJmYWNlIG9mIHBva2Vtb24tYXBpXG4gKi9cblxuZXhwb3J0ICogZnJvbSAnLi9saWIvcG9rZW1vbi1hcGkuc2VydmljZSc7XG5leHBvcnQgKiBmcm9tICcuL2xpYi9wb2tlbW9uLWFwaS5jb21wb25lbnQnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvcG9rZW1vbi1hcGkubW9kdWxlJztcbiJdfQ==

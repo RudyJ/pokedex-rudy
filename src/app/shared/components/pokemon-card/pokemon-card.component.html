@@ -1,0 +1,9 @@
+<div 
+  *ngIf="pokemon" 
+  class="pokemon-card" 
+  [ngClass]="pokemon.species.color.name"
+  [routerLink]="['/pokemon/' + pokemon.name]" 
+>
+  <img [src]="pokemon.sprites.front_default" [alt]="pokemon.name">
+  <span>{{pokemon.name}}</span>
+</div>

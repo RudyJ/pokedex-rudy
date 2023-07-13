@@ -1,0 +1,25 @@
+.buscar {
+    width: 100%;
+    padding: 12px 24px;
+    box-sizing: border-box;
+
+    input {
+        width: 100%;
+        padding: 12px 24px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        outline: none;
+    }
+}
+.pokemons-list {
+    width: 100%;
+    padding: 0 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}

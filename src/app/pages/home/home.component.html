@@ -1,0 +1,10 @@
+<menu>
+  <div class="buscar">
+    <input type="text" placeholder="Buscar Pokemon" [(ngModel)]="searchText" (keyup)="filtrar()" />
+  </div>
+  <div class="pokemons-list">
+    <div class="pokemon" *ngFor="let pokemon of pokemonsList">
+      <pokemon-card [pokemon]="pokemon"></pokemon-card>
+    </div>
+  </div>
+</menu>
